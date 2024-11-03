@@ -1,13 +1,57 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Lora:ital,wght@0,400..700;1,400..700&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+header {
+  z-index: 10001 !important ;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.input::placeholder {
+  color: #7F5539;
+}
+
+.input1::placeholder {
+  color: #B08968;
+}
+
+input[type="date"].input1 {
+  color: #B08968;
+}
+.input1[type="date"]::-webkit-inner-spin-button,
+.input1[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+}
+
+select.input1 {
+  color: #B08968;
+}
+
+.active-modal {
+  opacity: 1;
+  visibility: visible;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.custom-scroll {
+  overflow-y: scroll;
+}
+
+
+.custom-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.custom-scroll {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
