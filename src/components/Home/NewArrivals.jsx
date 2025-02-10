@@ -25,14 +25,14 @@ const NewArrivals = () => {
   };
 
   return (
-    <div className='p-[5%] lg:px-[6rem] 2xl:px-[20rem] bg-nude text-brown'>
+    <div className='p-[5%] lg:px-[8rem] bg-nude text-brown'>
       <div className='flex justify-between items-end text-brown1'>
         <div>
-        <p className='text-xl 2xl:text-2xl font-primary pb-6'>WHAT'S FRESH</p>
-        <h1 className='text-2xl md:text-5xl 2xl:text-6xl italic font-secondary'>New Arrivals</h1>
+        <p className='text-xl xl:text-2xl font-primary pb-6'>WHAT'S FRESH</p>
+        <h1 className='text-2xl md:text-5xl italic font-secondary'>New Arrivals</h1>
         </div>
         <a href='/shop'
-        className='text-sm md:text-lg 2xl:text-3xl font-primary capitalize px-3 md:px-6 py-2 2xl:py-5 mt-6 flex items-center border-2 border-brown1 hover:bg-brown1 hover:text-nude hover:-translate-y-4 duration-300 transition-all cursor-pointer'>
+        className='text-sm md:text-lg xl:text-3xl font-primary capitalize px-3 md:px-6 py-2 2xl:py-5 mt-6 flex items-center border-2 border-brown1 hover:bg-brown1 hover:text-nude hover:-translate-y-4 duration-300 transition-all cursor-pointer'>
           Shop now  
           <BsArrowRight className='ml-2 w-6 h-6'/>
         </a>
@@ -40,7 +40,7 @@ const NewArrivals = () => {
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-16 cursor-pointer text-brown3 mb-10'>
       {
           newArrivals.map((product) => ( 
-          <div key={product.id} 
+          <div key={product._id} 
           className='flex flex-col border border-brown3 p-10 space-y-4'>
             <div onClick={() => handleProductClick(product._id)}>
               <img src={product.image}

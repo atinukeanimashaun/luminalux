@@ -3,9 +3,9 @@ import { BsArrowRight } from "react-icons/bs";
 
 const Subscribe = () => {
   return (
-    <div className='p-[3%] lg:px-[6rem] 2xl:px-[10rem] bg-brown3 text-nude flex flex-col md:flex-row justify-between items-center gap-4'>
+    <div className='p-[3%] lg:px-[6rem] bg-brown3 text-nude flex flex-col md:flex-row justify-between items-center gap-4'>
       <h1 className='text-4xl lg:text-6xl font-secondary font-thin md:w-[65%]'>Subscribe to get 10% off your first order</h1>
-      <div className='md:w-1/2 2xl:px-[10rem] flex items-center my-7'>
+      <div className='md:w-1/2 flex items-center my-7'>
         <input 
         type="email" 
         name='email' id='login-email' 

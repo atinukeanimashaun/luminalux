@@ -46,13 +46,13 @@ const Testimonials = () => {
     // prevArrow: <simplePrevArrow />
   };
   return (
-    <div className='p-[5%] lg:px-[6rem] 2xl:px-[20rem] bg-nude text-brown1 font-primary'>
+    <div className='p-[5%] lg:px-[8rem] bg-nude text-brown1 font-primary'>
       <div className='flex flex-col md:flex-row md:items-center gap-7'>
         <div className='md:w-1/2 flex justify-center items-center'>
           <img src={Contact} alt="" className='w-[400px]  2xl:w-[850px] h-[500px] 2xl:h-[800px]'/>
         </div>
         <div className='md:w-1/2 pl-8 space-y-4 pb-10'>
-          <h2 className='text-xl 2xl:text-2xl font-primary mb-8'>Product Testimonials</h2>
+          <h2 className='text-xl xl:text-2xl font-primary mb-8'>Product Testimonials</h2>
 
             <Slider  {...settings}>
               {
@@ -65,8 +65,8 @@ const Testimonials = () => {
                       <BsStarFill />
                       <BsStarFill />
                     </div>
-                    <p className='text-xl lg:text-3xl 2xl:text-5xl font-secondary'>{item.text}</p>
-                    <p className='text-lg 2xl:text-xl italic'><span className='pr-1'>-</span>{item.name}</p>
+                    <p className='text-xl lg:text-4xl font-secondary'>{item.text}</p>
+                    <p className='text-lg xl:text-xl italic'><span className='pr-1'>-</span>{item.name}</p>
                   </div>
               ))}
             </Slider>

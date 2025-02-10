@@ -24,7 +24,7 @@ const Feature = () => {
   };
 
   return (
-    <div className='p-[5%] lg:px-[6rem] 2xl:px-[20rem] bg-nude'>
+    <div className='p-[5%] lg:px-[8rem] bg-nude'>
       <div className='flex flex-col items-center text-center space-y-2 mb-12'>
         <p className='text-brown1 text-xl md:text-2xl 2xl:text-3xl font-primary pb-4'>Our featured products</p>
         <h1 className='text-3xl lg:text-5xl text-brown3 font-secondary font-thin w-[70%] md:w-[65%] 2xl:w-[40%]'>Facial and skincare, natural and certified organic</h1>
@@ -32,7 +32,7 @@ const Feature = () => {
       <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-16 cursor-pointer text-brown3'>
         {
           features.map((product) => (
-            <div key={product.id}  
+            <div key={product._id}  
             className='flex flex-col border border-brown3 p-10 space-y-4 '>
             <div onClick={() => handleProductClick(product._id)}>
               <img src={product.image}
@@ -43,7 +43,7 @@ const Feature = () => {
             </div>
 
             <div>
-              <h2 className='text-lg font-primary capitalize w-[70%] truncate overflow-hidden whitespace-nowrap'>{product.name}</h2>
+              <h2 className='text-xl font-primary capitalize w-[70%] truncate overflow-hidden whitespace-nowrap'>{product.name}</h2>
 
               <div className='flex justify-between items-end pt-3'>
                 <h5 className='text-xl font-primary font-semibold'><span className='pr-2'>$</span>{product.price}</h5>

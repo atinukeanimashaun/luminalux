@@ -11,7 +11,7 @@ const Benefits = () => {
           <div className='flex flex-col md:flex-row md:items-center gap-7 mt-8'>
           <div className='md:w-1/2 flex justify-center items-center'>
             <img src={SkinCare}
-            alt="" className='w-[400px] h-[500px]' />
+            alt="" className='w-[500px] h-[600px]' />
           </div>
           <div className='md:w-1/2 space-y-6'>
             <p className='text-xl capitalize'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, laborum. Explicabo alias quos dignissimos.</p>

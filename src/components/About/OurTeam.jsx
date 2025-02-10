@@ -40,6 +40,7 @@ const OurTeam = () => {
                   {openIndex === index ? <BiMinus /> : <BiPlus />}
                   </div>
                 </div>
+                
                 <div className={`grid  overflow-hidden transition-all duration-300 ease-in-out pt-6 ${
                   openIndex === index
                     ? "grid-row-[1fr] block" 

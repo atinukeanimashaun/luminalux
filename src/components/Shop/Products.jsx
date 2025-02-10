@@ -110,7 +110,7 @@ const Products = () => {
         />
         <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-16 cursor-pointer text-brown3'>
           {currentItems.map((product) => (
-            <div key={product.id} className='flex flex-col border border-brown3 py-10 px-7 space-y-4'>
+            <div key={product._id} className='flex flex-col border border-brown3 py-10 px-7 space-y-4'>
               <div onClick={() => handleProductClick(product._id)}>
                 <img src={product.image} alt={product.name} className='mb-5 hover:scale-105 transition-all duration-200' />
               </div>

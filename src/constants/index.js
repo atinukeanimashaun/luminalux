@@ -86,10 +86,10 @@ import { aqua,
   team1, } from "../assets";
 
 export const links = [
-  { name: "Shop", link: "/shop" },
-  { name: "About", link: "/about" },
-  { name: "Blog", link: "/blog" },
-  { name: "Contact us", link: "/contact" },
+  { id: "1", name: "Shop", link: "/shop" },
+  { id: "2", name: "About", link: "/about" },
+  { id: "3", name: "Blog", link: "/blog" },
+  { id: "4", name: "Contact us", link: "/contact" },
   // { id: "4", name: "UpdateProfile", url: "update-profile"},
 ];
 export const features = [
